@@ -7,3 +7,11 @@ Why can i use this.props.left when console.log(props); outputs an obj that doesn
 
 Selecting a specific player or champion
 How to do this with data
+
+
+Finish Navigation stuff (click on video id, have it load id on right side)
+Pull Data from API
+Video Player
+Styling
+Home page to second page transition
+Left Panel right panel resizing stuff

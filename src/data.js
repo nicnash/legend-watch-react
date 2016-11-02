@@ -1,9 +1,17 @@
-const data = [
-	{
+const data = {
 		champions:[
 			{
 				id:1,
-				name:'Aatrox'
+				name:'Aatrox',
+				matches: [
+					{
+						id:52112,
+						kda:5
+					},{
+						id:2321,
+						kda:2
+					}
+				]
 			},
 			{
 				id:2,
@@ -42,4 +50,23 @@ const data = [
 
 		]
 	}
-]
+
+
+
+exports.getAll = function () {
+  return data
+}
+
+// const dataMap = data.reduce(function (map, category) {
+//   category.itemsMap = category.items.reduce(function (itemsMap, item) {
+//     itemsMap[item.name] = item
+//     return itemsMap
+//   }, {})
+//   map[category.name] = category
+//   return map
+// }, {})
+
+// exports.lookupCategory = function (name) {
+//   console.log('datamap:', dataMap);
+//   return dataMap[name]
+// }
