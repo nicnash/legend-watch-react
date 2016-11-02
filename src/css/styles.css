@@ -1,0 +1,13 @@
+body {
+	background-color: green;
+}
+
+.LeftPanel {
+	background-color: blue;
+	display:inline-block;
+	width:200px;
+}
+
+.RightPanel {
+	display:inline-block;
+}
