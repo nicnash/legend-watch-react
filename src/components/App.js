@@ -1,14 +1,51 @@
 import React from 'react';
-import LeftPanel from './LeftPanel';
-import RightPanel from './RightPanel'
+import PanelLeft from './PanelLeft';
+import PanelRight from './PanelRight'
+
+const Index = () => (
+  <div>
+    <h1>Sidebar</h1>
+    <p>
+      Routes can have multiple components, so that all portions of your UI
+      can participate in the routing.
+    </p>
+  </div>
+)
+
+const IndexSidebar = () => (
+  <div>
+    <h2>Categories</h2>
+  </div>
+)
 
 class App extends React.Component {
+  constructor(props, context) {
+    super(props, context)
+    console.log('props',props);
+    var {left,right} = props;
+    // this.setState({left,right});
+  }
 	render(){
 		return <div>
-			<LeftPanel></LeftPanel>
-			<RightPanel></RightPanel>
+			<PanelLeft>  {this.props.left}	</PanelLeft>
+			<PanelRight> {this.props.right ||<Index />}		</PanelRight>
 		</div>
 	}
 }
+
+// const App = (props) => {
+//   console.log(props);
+//   let {left,right} = props;
+//   console.log(left);
+//   return (
+//   <div>
+//       <PanelLeft>{left || <IndexSidebar />}</PanelLeft>
+//       <PanelRight>{right || <Index />}</PanelRight>
+//   </div>
+//   )
+
+// }
+
+
 
 export default App;
