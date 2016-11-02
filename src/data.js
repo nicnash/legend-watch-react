@@ -162,24 +162,18 @@ const data = {
 
 
 const dataMap = function(){
-	data['championsMap'] = data.champions.reduce(function(map,currentValue){
-		// champion.matchesMap = champion.matches.reduce(function (matchesMap, item) {
-		// 	matchesMap[item.name] = item
-		// 	return matchesMap
-		// }, {})
+	data['championsMap'] = data.champions.reduce(function(map,currentChampion){
+		currentChampion.matchesMap = currentChampion.matches.reduce(function (matchesMap, match) {
+			matchesMap[match.id] = match
+			return matchesMap
+		}, {})
 
-
-
-
-
-		map[currentValue.name] = currentValue;
+		map[currentChampion.name] = currentChampion;
 		return map;
 	}, {})
 
 	return data
 }();
-
-console.log('datamap',dataMap);
 
 exports.lookupChampion = function (name) {
   console.log('datamap:', data.championsMap);
