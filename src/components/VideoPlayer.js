@@ -13,6 +13,7 @@ const VideoPlayer = ({ params }) => {
   <div>
     <h1>VideoPlayer</h1>
     <h2>{params.match}</h2>
+    <div id="TWITCHPLAYER"></div>
 
 
 
