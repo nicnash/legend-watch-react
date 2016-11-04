@@ -21,7 +21,6 @@ const IndexSidebar = () => (
 class App extends React.Component {
   constructor(props, context) {
     super(props, context)
-    console.log('props',props);
     var {left,right} = props;
     // this.setState({left,right});
   }

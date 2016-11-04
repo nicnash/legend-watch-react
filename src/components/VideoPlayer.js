@@ -22,11 +22,7 @@ import React from 'react';
 class VideoPlayer extends React.Component {
   constructor(props, context) {
 		super(props, context)
-		console.log('VideoPlayer',props);
 
-		
-		// this.setState(options);
-		// var player = new Twitch.Player("TWITCHPLAYER", options);
 		this.state = {
 			options: {
 				width: 854,
@@ -37,13 +33,9 @@ class VideoPlayer extends React.Component {
 		};
 
 	}
-
-	
 	
 	componentDidMount(){
-		console.log('componentDidMount');
-		console.log(this.state);
-		var player = new Twitch.Player("TWITCHPLAYER", this.state.options);
+		// var player = new Twitch.Player("TWITCHPLAYER", this.state.options);
 	}
 
 	render(){
