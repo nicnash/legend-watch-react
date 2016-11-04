@@ -15,3 +15,9 @@ Video Player
 Styling
 Home page to second page transition
 Left Panel right panel resizing stuff
+
+
+
+getChampions
+getPlayers
+getChampion(Ahri)

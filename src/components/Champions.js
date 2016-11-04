@@ -2,6 +2,11 @@ import React from 'react';
 import { Link } from 'react-router';
 import data from '../data';
 class Champions extends React.Component {
+	constructor(props, context) {
+		super(props,context)
+		// fetch('')
+		// 	.then(data => data.json())
+	}
 	render(){
 		// const champions = data.lookupCategory('champions')
 		console.log('sfeefw',data.getAll());

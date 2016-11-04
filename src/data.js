@@ -176,13 +176,21 @@ const dataMap = function(){
 }();
 
 exports.lookupChampion = function (name) {
-  console.log('datamap:', data.championsMap);
+  console.log('lookupChampion:', data.championsMap);
   return dataMap.championsMap[name]
 }
 
 exports.getAll = function () {
   return data
 }
+
+// exports.updateChampion = function(name) {
+
+// }
+
+// exports
+
+
 
 // const dataMap = data.reduce(function (map, category) {
 //   category.itemsMap = category.items.reduce(function (itemsMap, item) {
