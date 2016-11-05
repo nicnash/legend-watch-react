@@ -11,13 +11,24 @@ module.exports = {
 	devtool: 'source-map',
 	module: {
 		loaders:[
+		  		{ 
+		  			test: /\.css$/, 
+		  			loader: "style-loader!css-loader" },
 				{
-				test: /\.js$/,
-				exclude: /node_modules/,
-				loader: 'babel',
-				query: {
-					presets: ['es2015', 'react']
-				}
+				 	test: /\.(ico|jpg|png|gif|eot|otf|webp|svg|ttf|woff|woff2)(\?.*)?$/,
+				  	exclude: /\/favicon.ico$/,
+				  	loader: 'file',
+				  	query: {
+				   		name: 'static/media/[name].[hash:8].[ext]'
+				  	}
+				},
+				{
+					test: /\.js$/,
+					exclude: /node_modules/,
+					loader: 'babel',
+					query: {
+						presets: ['es2015', 'react']
+					}
 			}
 		]
 	}

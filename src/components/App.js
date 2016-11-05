@@ -25,7 +25,7 @@ class App extends React.Component {
     // this.setState({left,right});
   }
 	render(){
-		return <div>
+		return <div className="App">
 			<PanelLeft>  {this.props.left}	</PanelLeft>
 			<PanelRight> {this.props.right ||<Index />}		</PanelRight>
 		</div>

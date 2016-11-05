@@ -9,15 +9,18 @@ Selecting a specific player or champion
 How to do this with data
 
 
-Finish Navigation stuff (click on video id, have it load id on right side)
-Pull Data from API
-Video Player
+
+
 Styling
 Home page to second page transition
 Left Panel right panel resizing stuff
+Fix the starting at a subroute not working
 
 
 
-getChampions
-getPlayers
-getChampion(Ahri)
+
+
+Panel Layout
+
+Takes up full height
+Left panel is adjustable, defaults to 300px;

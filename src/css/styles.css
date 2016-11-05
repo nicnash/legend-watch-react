@@ -1,50 +1,150 @@
-body {
-	
+
+@import 'normalize.css';
+
+html
+{
+    box-sizing: border-box;
+    height: 100%;
+}
+*,
+*:before,
+*:after
+{
+    box-sizing: inherit;
+}
+
+
+body
+{
+    height: 100%;
+
+    background-color: #1A121D;
+
+    overflow: hidden;
 }
 
 
 
-a.active {
-  color: hsl(20, 50%, 50%);
+a.active
+{
+    color: hsl(20, 50%, 50%);
 }
 
-ul {
-	list-style: none;
-	padding:0;
-	margin:0;
+ul
+{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
 }
-li {
-	text-decoration: none;
-	display:inline-block;
-	padding: 1px;
+li
+{
+    display: inline-block;
+
+    padding: 1px;
+
+    text-decoration: none;
+}
+
+.App
+{
+    height: 100%;
 }
 
 
-.Champion {
-	
-}
-.Champion li {
-	display:block;
+.Champion li
+{
+    display: block;
 }
 
 .Champions {
-	
+	text-align: center;
+	height: calc(100vh - 174px);
+	overflow: auto;
 }
 
-.Menu {
-	background-color: #666;
-	display:block;
+.Champions ul{}
+
+.Champions-championSquare{
+    width:80px;
+    height:80px;
+    text-align: center;
+    display:inline-block;
+    margin:5px; 
+    border: 4px solid #302A38;
 }
 
-.PanelLeft {
-	background-color: light-gray;
-	display:inline-block;
-	width:300px;
-	border:1px solid red;
+.Champions-championSquare kbd.count {
+	float: right;
+	position: relative;
+	z-index: 200;
+	top: -22px;
+}
+    
+.Champions-championSquare img.icon {
+    width:71px;
 }
 
-.PanelRight {
-	display:inline-block;
-
+.Champions-championSquare img.icon:hover {
+    border:4px solid gold;
+    box-shadow: 2px 2px 2px #888888;
 }
 
+.Champions-champion Square.name {
+    font-size: 12px;
+    display:inline-block;
+    width:80px;
+    position: relative;
+    top: -22px;
+}
+
+
+.Header
+{
+    height: 114px;
+    padding-top: 27px;
+
+    text-align: center;
+
+    background-color: #1A121D;
+}
+
+.Header-logo
+{
+    margin: 0 auto;
+}
+
+.Menu
+{
+    display: block;
+
+    width: 100%;
+
+    background-color: #1f1424;
+}
+
+.Menu-item
+{
+    width: 60px;
+    height: 60px;
+
+    border-right: 1px solid #251c27;
+    /*background-color: #170F1B;*/
+    border-bottom: 1px solid #251c27;
+}
+
+.PanelLeft
+{
+    display: inline-block;
+
+    width: 300px;
+    height: 100%;
+
+    border-right: 3px solid #241f29;
+    background-color: #1A121D;
+}
+
+.PanelRight
+{
+    display: inline-block;
+}

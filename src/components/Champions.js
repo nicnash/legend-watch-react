@@ -28,16 +28,30 @@ class Champions extends React.Component {
 	}
 	render(){
 		return <div className="Champions">
+		sdfsdfsdfsdfsdfsdfsdf
 			<ul>
-				{this.state.status}
 				{this.state.champions.map((champion, index) => (
-				  <li key={index}>
-				    <Link to={`/champions/${champion.key}`}>{champion.name}</Link>
+				  <li key={index} className="Champions-championSquare">
+
+				    <Link to={`/champions/${champion.key}`}>
+				    	<img className="icon" src={`http://ddragon.leagueoflegends.com/cdn/6.21.1/img/champion/${champion.key}.png`} alt={champion.name}/>
+				    </Link>
 				  </li>
 				))}
 			</ul>
 		</div>
 	}
 }
+
+
+
+
+// {{#link-to 'champion' champion.key}}
+//     <img class="icon" src={{championURL}} alt={{champion.name}}>
+//     <kbd class="count">{{champion.video_count}}</kbd>
+// {{/link-to}}
+
+// <span class="name text-muted">{{champion.name}}</span>
+
 
 export default Champions;

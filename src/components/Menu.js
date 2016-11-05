@@ -7,8 +7,8 @@ class Menu extends React.Component {
 	render(){
 		return <div className="Menu">
 			<ul>
-				<li><Link to="/champions" activeStyle={ACTIVE}>champions</Link></li>
-				<li><Link to="/players"   activeStyle={ACTIVE}>players</Link></li>
+				<li className="Menu-item"><Link to="/champions" activeStyle={ACTIVE}>a</Link></li>
+				<li className="Menu-item"><Link to="/players"   activeStyle={ACTIVE}>b</Link></li>
 			</ul>
 		</div>
 	}

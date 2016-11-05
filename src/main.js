@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// import './css/style.css';
+import './css/styles.css';
 import App from './components/App';
 import Champions 	from './components/Champions';
 import Champion 	from './components/Champion';
 import Players 		from './components/Players';
 import Player 		from './components/Player';
 import VideoPlayer 	from './components/VideoPlayer';
+
 
 import { Router, Route, IndexRoute, browserHistory} from 'react-router'
 

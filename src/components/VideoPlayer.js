@@ -35,7 +35,15 @@ class VideoPlayer extends React.Component {
 	}
 	
 	componentDidMount(){
-		// var player = new Twitch.Player("TWITCHPLAYER", this.state.options);
+		let player = new Twitch.Player("TWITCHPLAYER", this.state.options);
+		this.setState({player:player});
+	}
+	componentWillReceiveProps(nextProps) {
+		// console.log('componentWillReceiveProps',nextProps);
+		let player = this.state.player;
+		// this.state.player.setVideo(`v${nextProps.params.match}`);
+		player.setVideo(`v${nextProps.params.match}`);
+		console.log('set the video!  is it working guyz?!',player);
 	}
 
 	render(){
@@ -43,6 +51,7 @@ class VideoPlayer extends React.Component {
 			<h1>VideoPlayer</h1>
 			<h2>{this.props.params.match}</h2>
 			<div id="TWITCHPLAYER"></div>
+			button here.
 		</div>
 	}
 }

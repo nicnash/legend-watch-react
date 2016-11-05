@@ -48,6 +48,7 @@ class Champion extends React.Component {
         console.log('received',this.state);
     }
 
+
     render(){
         return (
             <div className="Champion">
@@ -58,7 +59,7 @@ class Champion extends React.Component {
                 <ul>
                     {this.state.matches.map((match, index) => (
                         <li key={index}>
-                            <Link to={`/champions/${this.state.champion}/${match.id}`}>{match.id} - {match.kda}</Link>
+                            <Link to={`/champions/${this.state.champion}/${match.vod_id}`}>{match.player_name} - {match.opponent_name} - {match.remote_recorded_at}</Link>
                         </li>
                     ))}
                 </ul>
