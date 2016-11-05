@@ -1,0 +1,171 @@
+//////////////////////////////////////////////////////////////App
+.App
+{
+    height: 100%;
+}
+
+
+
+//////////////////////////////////////////////////////////////Champion
+.Champion
+{
+    overflow: auto;
+
+    height: calc(100vh - 174px);
+}
+
+.Champion li
+{
+    display: block;
+}
+
+//////////////////////////////////////////////////////////////Champions
+.Champions
+{
+    overflow: auto;
+
+    height: calc(100vh - 174px);
+
+    text-align: center;
+    .championSquare
+    {
+        display: inline-block;
+
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+
+        text-align: center;
+
+        border: 4px solid #302a38;
+        kbd.count
+        {
+            position: relative;
+            z-index: 200;
+            top: -22px;
+
+            float: right;
+        }
+        img.icon
+        {
+            width: 71px;
+            &:hover
+            {
+                border: 4px solid gold;
+                box-shadow: 2px 2px 2px #888;
+            }
+        }
+    }
+}
+
+
+
+
+
+/*.championSquare img.icon:hover
+{
+    border: 4px solid gold;
+    box-shadow: 2px 2px 2px #888;
+}*/
+
+// .Champions-champion square.name
+// {
+//     font-size: 12px;
+
+//     position: relative;
+//     top: -22px;
+
+//     display: inline-block;
+
+//     width: 80px;
+// }
+
+
+//////////////////////////////////////////////////////////////Header
+.Header
+{
+    height: 114px;
+    padding-top: 27px;
+
+    text-align: center;
+
+    background-color: #1a121d;
+}
+
+.Header-logo
+{
+    margin: 0 auto;
+}
+
+//////////////////////////////////////////////////////////////Menu
+.Menu
+{
+    display: block;
+
+    width: 100%;
+
+    background-color: #1f1424;
+}
+
+.Menu-item
+{
+    width: 60px;
+    height: 60px;
+
+    border-right: 1px solid #251c27;
+    /*background-color: #170F1B;*/
+    border-bottom: 1px solid #251c27;
+}
+
+//////////////////////////////////////////////////////////////PanelLeft
+.PanelLeft
+{
+    display: inline-block;
+
+    width: 300px;
+    height: 100%;
+
+    border-right: 3px solid #241f29;
+    background-color: #1a121d;
+}
+
+//////////////////////////////////////////////////////////////PanelRight
+.PanelRight
+{
+    position: absolute;
+    /* float: right; */
+    top: 0;
+
+    display: inline-block;
+    /*width: 100%;*/
+
+    width: calc(100% - 300px);
+    height: 100%;
+}
+
+//////////////////////////////////////////////////////////////VideoPlayer
+.VideoPlayer
+{
+    height: 100%;
+
+    text-align: center;
+
+    background-color: rgb(0, 0, 0);
+    background-image: url('../img/bg_right_azir.jpg');
+    background-attachment: initial;
+    background-position-x: center;
+    background-position-y: top;
+    background-clip: initial;
+    background-origin: initial;
+    background-size: 100% auto;
+    /*background-size: 100% auto;*/
+    background-size: cover;
+
+    background-repeat-x: none;
+    background-repeat-y: none;
+}
+
+#TWITCHPLAYER
+{
+    /*margin:0 auto;*/
+}

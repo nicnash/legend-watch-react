@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import './css/styles.css';
+import './css/styles.scss';
 import App from './components/App';
 import Champions 	from './components/Champions';
 import Champion 	from './components/Champion';

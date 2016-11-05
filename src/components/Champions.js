@@ -30,7 +30,7 @@ class Champions extends React.Component {
 		return <div className="Champions">
 			<ul>
 				{this.state.champions.map((champion, index) => (
-				  <li key={index} className="Champions-championSquare">
+				  <li key={index} className="championSquare">
 
 				    <Link to={`/champions/${champion.key}`}>
 				    	<img className="icon" src={`http://ddragon.leagueoflegends.com/cdn/6.21.1/img/champion/${champion.key}.png`} alt={champion.name}/>

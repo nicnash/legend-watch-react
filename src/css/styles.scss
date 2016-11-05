@@ -1,0 +1,50 @@
+
+@import 'normalize.css';
+@import 'components.scss';
+/*@import largeAzir from '../img/bg_right_azir.jpg';*/
+
+html
+{
+    box-sizing: border-box;
+    height: 100%;
+}
+*,
+*:before,
+*:after
+{
+    box-sizing: inherit;
+}
+
+
+body
+{
+    overflow: hidden;
+
+    height: 100%;
+
+    background-color: #1a121d;
+}
+
+
+
+a.active
+{
+    color: hsl(20, 50%, 50%);
+}
+
+ul
+{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+li
+{
+    display: inline-block;
+
+    padding: 1px;
+
+    text-decoration: none;
+}
+
