@@ -28,7 +28,6 @@ class Champions extends React.Component {
 	}
 	render(){
 		return <div className="Champions">
-		sdfsdfsdfsdfsdfsdfsdf
 			<ul>
 				{this.state.champions.map((champion, index) => (
 				  <li key={index} className="Champions-championSquare">

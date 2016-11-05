@@ -54,8 +54,6 @@ class Champion extends React.Component {
             <div className="Champion">
                 <Link to="champions">Back</Link>
 
-                <h1>Champion</h1>
-                <h2>{this.state.champion}</h2>
                 <ul>
                     {this.state.matches.map((match, index) => (
                         <li key={index}>

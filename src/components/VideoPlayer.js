@@ -28,7 +28,7 @@ class VideoPlayer extends React.Component {
 				width: 854,
 				height: 480,
 				// channel: "{CHANNEL}", 
-				video: "v98060185"       
+				// video: "v98060185"       
 			}
 		};
 
@@ -47,11 +47,9 @@ class VideoPlayer extends React.Component {
 	}
 
 	render(){
-		return  <div>
-			<h1>VideoPlayer</h1>
-			<h2>{this.props.params.match}</h2>
+		return  <div className="VideoPlayer">
+			<span>A vs B</span>
 			<div id="TWITCHPLAYER"></div>
-			button here.
 		</div>
 	}
 }
