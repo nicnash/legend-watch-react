@@ -50,16 +50,21 @@ class Champion extends React.Component {
 
 
     render(){
+        
         return (
             <div className="Champion">
                 <Link to="champions">Back</Link>
 
                 <ul>
-                    {this.state.matches.map((match, index) => (
-                        <li key={index}>
-                            <Link to={`/champions/${this.state.champion}/${match.vod_id}`}>{match.player_name} - {match.opponent_name} - {match.remote_recorded_at}</Link>
-                        </li>
-                    ))}
+                    {this.state.matches.map((match, index) => {
+                        const temp = match.url.split('=');
+                        const timestamp = temp[temp.length-1];
+                        return (
+                            <li key={index}>
+                                <Link to={`/champions/${this.state.champion}/${match.vod_id}/${timestamp}`}>{match.player_name} - {match.opponent_name} - {match.remote_recorded_at}</Link>
+                            </li>
+                        )
+                    })}
                 </ul>
             </div>
         )    
